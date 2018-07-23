@@ -1,0 +1,29 @@
+///finding the greater number among 3 number.
+#include<stdio.h>
+
+int main ()
+{
+    double a,b,c;
+
+    printf("ENTER 3 NUMBERS : ");
+    scanf("%lf%lf%lf",&a,&b,&c);
+
+    if(a>b)
+    {
+        if(a>c)
+        printf("a is greater");
+
+        else
+        printf("c is greater");
+    }
+    else
+    {
+        if(b>c)
+        printf("b is greater");
+
+        else
+        printf("c is greater");
+
+    }
+    return 0;
+}
