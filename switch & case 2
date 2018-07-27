@@ -1,0 +1,50 @@
+#include<stdio.h>
+
+int main(void)
+{
+    char ch;
+
+    while (scanf("%c",&ch)!=EOF)
+    switch(ch)
+    {
+    case 'a':
+        printf("the letter is a\n");
+        break;
+    case 'b':
+        printf("the letter is b\n");
+        break;
+    case 'c':
+        printf("the letter is c\n");
+        break;
+    case 'd':
+        printf("the letter is d\n");
+        break;
+    case 'A':
+        printf("the letter is A \n");
+        break;
+    case 'B':
+        printf("the letter is B\n");
+        break;
+    case 'C':
+        printf("the letter is C\n");
+        break;
+    case 'D':
+        printf("the letter is D\n");
+        break;
+    case '3':
+        printf("the digit is 3\n");
+        break;
+    case '5':
+        printf("the digit is 5\n");
+        break;
+    case '7':
+        printf("the digit is 7\n");
+        break;
+    case '9':
+        printf("the digit is 9\n");
+        break;
+
+    }
+
+    return 0;
+}
