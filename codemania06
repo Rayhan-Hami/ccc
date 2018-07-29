@@ -1,0 +1,41 @@
+#include<stdio.h>
+
+int main(void)
+{
+    double num1,num2;
+
+    char ch;
+
+    printf("Enter An Operator(+,-,*,/): ");
+    scanf("%c",&ch);
+
+    printf("Enter 1st Number: ");
+    scanf("%lf",&num1);
+
+    printf("Enter 2nd Number: ");
+    scanf("%lf",&num2);
+
+    switch(ch)
+    {
+        case '+':
+            printf("the sum is %.2lf\n",num1+num2);
+            break;
+
+        case '-':
+            printf("the minuses is %.2lf\n",num1-num2);
+            break;
+
+        case '*':
+            printf("the multi is %.2lf\n",num1*num2);
+            break;
+
+        case '/':
+            printf("the division is %.2lf",num1/num2);
+
+        default:
+            printf("ERROR 404\n");
+
+    }
+
+    return  0;
+}
