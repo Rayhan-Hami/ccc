@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main()
+{
+    int x,y,day,month,year;
+
+    printf("Enter Number Of Days: ");
+    scanf("%d",&day);
+
+    month=day/30;
+
+    y=day%30;
+
+    year=day/365;
+
+    x=day%365;
+
+
+    printf("Number Of Month: %d Number of Day: %d",month,y);
+
+    printf("\nNumber Of Year: %d Number of Day: %d",year,x);
+
+    return 0;
+
+}
