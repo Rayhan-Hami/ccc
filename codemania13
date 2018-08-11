@@ -1,0 +1,60 @@
+#include<stdio.h>
+
+int main(void)
+{
+    int n,i;
+
+    double sum,multi,x,num1,num2;
+
+    char ch;
+
+    sum=0;
+
+    multi=1;
+
+
+    printf("Enter An Operator(+,-,*,/): ");
+    scanf("%c",&ch);
+
+    switch(ch)
+    {
+        case '+':
+            scanf("%d",&n);
+            for(i=0;i<n;i++)
+            {
+                scanf("%lf",&x);
+
+                    sum=sum+x;
+            }
+            printf("Summation = %.2lf",sum);
+            break;
+
+        case '-':
+            scanf("%lf%lf",&num1,&num2);
+
+            printf("Subtraction = %.2lf",num1-num2);
+
+            break;
+
+        case '*':
+            scanf("%d",&n);
+            for(i=0;i<n;i++)
+            {
+                scanf("%lf",&x);
+
+                multi=multi*x;
+            }
+            printf("Multiplication = %.2lf",multi);
+            break;
+
+        case  '/':
+            scanf("%lf%lf",&num1,&num2);
+
+            printf("Division = %.2lf",num1/num2);
+
+        default:
+            printf("ERROR 404");
+
+    }
+        return 0;
+}
