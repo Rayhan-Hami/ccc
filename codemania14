@@ -71,10 +71,10 @@ int main(void)
         break;
     
     case '%':
-        printf("Enter a number: ");
+        printf("\nEnter a number: ");
         scanf("%lf",&b);
 
-        printf("Enter amount of percentage: ");
+        printf("\nEnter amount of percentage: ");
         scanf("%lf",&p);
 
         printf("\n%.2lf%c of %.2lf = %.2lf",p,ch2,b,(p/100)*b);
