@@ -2,10 +2,10 @@
 int main(void)
 {
     int n,x2,i,n2,multi2;
-    double sum,x,multi,num1,num2;
-    char ch;
+    double sum,x,multi,num1,num2,b,p;
+    char ch,ch2;
 
-    printf("Enter An Operator(+,-,*,/,power(^): ");
+    printf("Enter An Operator(+,-,*,/,power(^),percentage(%): ");
     scanf("%c",&ch);
     switch(ch)
     {
@@ -69,6 +69,19 @@ int main(void)
 
         printf("\n%d^%d = %d",x2,n2,multi2);
         break;
+    
+    case '%':
+        double b,p;
+
+        char ch2='%';
+
+        printf("Enter a number: ");
+        scanf("%lf",&b);
+
+        printf("Enter amount of percentage: ");
+        scanf("%lf",&p);
+
+        printf("\n%.2lf%c of %.2lf = %.2lf",p,ch2,b,(p/100)*b);
 
     default:
         printf("\nYou have entered a unknown operator");
