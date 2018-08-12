@@ -78,6 +78,7 @@ int main(void)
         scanf("%lf",&p);
 
         printf("\n%.2lf%c of %.2lf = %.2lf",p,ch2,b,(p/100)*b);
+        break;
 
     default:
         printf("\nYou have entered a unknown operator");
