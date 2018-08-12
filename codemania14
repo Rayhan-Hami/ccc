@@ -3,9 +3,9 @@ int main(void)
 {
     int n,x2,i,n2,multi2;
     double sum,x,multi,num1,num2,b,p;
-    char ch,ch2;
+    char ch,ch2='%';
 
-    printf("Enter An Operator(+,-,*,/,power(^),percentage(%): ");
+    printf("Enter An Operator(+,-,*,/,power(^),percentage(%c): ",ch2);
     scanf("%c",&ch);
     switch(ch)
     {
