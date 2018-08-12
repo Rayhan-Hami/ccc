@@ -50,7 +50,7 @@ int main(void)
         printf("\nNote: plz input a space between numbers.\n");
 
         scanf("%lf%lf",&num1,&num2);
-        printf("\nDivision = %.2lf",num1/num2);
+        printf("\nQuotient = %.2lf",num1/num2);
         break;
 
     case '^':
