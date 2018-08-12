@@ -71,10 +71,6 @@ int main(void)
         break;
     
     case '%':
-        double b,p;
-
-        char ch2='%';
-
         printf("Enter a number: ");
         scanf("%lf",&b);
 
