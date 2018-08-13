@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main(void)
+{
+
+    int col,row;
+
+
+    for(row='A';row<='G';row++)
+    {
+        for(col=1;col<=7;col++)
+        {
+            printf("%c%d\t",row,col);
+        }
+        printf("\n");
+    }
+    return 0;
+}
