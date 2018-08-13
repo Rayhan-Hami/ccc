@@ -1,11 +1,11 @@
 #include<stdio.h>
 int main(void)
 {
-    int n,x2,i,n2,multi2;
+    int n,x2,i,k,n2,multi2,multi3;
     double sum,x,multi,num1,num2,b,p;
-    char ch,ch2='%';
+    char ch,ch2='%',ch3='!';
 
-    printf("Enter An Operator(+,-,*,/,power(^),percentage(%c): ",ch2);
+    printf("Enter An Operator(+,-,*,/,power(^),percentage(%c),fact(!): ",ch2,ch3);
     scanf("%c",&ch);
     switch(ch)
     {
@@ -69,7 +69,7 @@ int main(void)
 
         printf("\n%d^%d = %d",x2,n2,multi2);
         break;
-    
+
     case '%':
         printf("\nEnter a number: ");
         scanf("%lf",&b);
@@ -80,11 +80,26 @@ int main(void)
         printf("\n%.2lf%c of %.2lf = %.2lf",p,ch2,b,(p/100)*b);
         break;
 
+    case '!':
+        printf("\nEnter a number: ");
+        scanf("%d",&n2);
+
+        multi3= 1;
+
+        k=1;
+        for(i=1;i<=n2;i++)
+        {
+            multi3=multi3*k;
+            k++;
+        }
+        printf("\nFactorial= %d",multi3);
+
+        break;
+
     default:
         printf("\nYou have entered a unknown operator");
 
      }
         return 0;
 }
-
 
