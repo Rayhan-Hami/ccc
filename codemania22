@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int function1(int n,int power)
+{
+    int mult =1 ,i;
+
+    for(i = 1; i <= power; i++)
+        mult = mult*n;
+
+    return mult;
+}
+int main()
+{
+    int result;
+
+    result = function1(2,3);
+
+    printf("%d",result);
+
+    return 0;
+}
